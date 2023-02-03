@@ -11,7 +11,7 @@ from simulator import Simulator
 
 if __name__ == '__main__':
     #set up the logger
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.WARNING)
     log = logging.getLogger('sim')
     #read the config
     config_path = 'basic.cfg'
