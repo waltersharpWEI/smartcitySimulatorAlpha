@@ -21,11 +21,11 @@ if __name__ == '__main__':
         log.info("Table:"+str(cfg['table_path']))
         df_bd = pd.read_csv(cfg['bandwidth_path'])
         df_t = pd.read_csv(cfg['table_path'])
-        log.warning("Starting Simulator.")
+        log.info("Starting Simulator.")
         #start simulator according to config
         sim = Simulator(cfg)
         acc_list = sim.sim_acc()
-        log.warning("Simulator Stopped.")
+        log.info("Simulator Stopped.")
         #print the average accuracy
         print('Average Accuracy:',acc_list.mean())
 
